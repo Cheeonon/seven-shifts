@@ -1,0 +1,17 @@
+.day-block{
+    &__ticket{
+        height: 50%;
+        border: solid 1px rgb(178, 176, 176);
+    }
+
+    &__type{
+        width: 30%;
+        height: 100%;
+        background-color: rgb(222, 92, 92);
+    }
+
+    &__add{
+        display: flex;
+        color: grey;
+    }
+}

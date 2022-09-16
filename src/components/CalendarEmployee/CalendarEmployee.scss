@@ -1,0 +1,8 @@
+.employee{
+    font-weight: bold;
+    color: rgb(105, 95, 95);
+
+    &:hover{
+        background-color: rgba(222, 223, 223, 0.369);
+    }
+}
