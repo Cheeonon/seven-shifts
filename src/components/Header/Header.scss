@@ -10,6 +10,8 @@
     padding: 0 1rem;
     color: $custom-gray;
     font-size: 0.9rem;
+    position: fixed;
+    z-index: 1;
 
     &__logo{
         width: 20%;

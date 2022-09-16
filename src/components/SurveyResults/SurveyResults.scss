@@ -1,0 +1,52 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/variables' as *;
+
+.survey-results {
+    position: fixed;
+    right: 0;
+    width: 35%;
+    height: 100vh;
+    padding: 7.5rem 2.5rem;
+    background-color: #F0F3FC;
+
+    &__title {
+        color: $primary-blue;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__subtitle {
+        width: 50%;
+        font-size: 1.25rem;
+        text-align: center;
+
+        &-row {
+            display: flex;
+        }
+    }
+
+    &__field {
+        display: block;
+        color: $primary-black;
+        text-align: center;
+        text-transform: capitalize;
+
+        &-row {
+            display: flex;
+            padding: 0 1rem;
+            &:not(:last-child) {
+                border-bottom: 1px solid $primary-grey;
+            }
+        }
+
+        &-container {
+            width: 50%;
+        }
+    }
+
+    &__candidates {
+        background-color: #FFFFFF;
+        border: 1px solid $primary-grey;
+        border-radius: 6px;
+    }
+}
