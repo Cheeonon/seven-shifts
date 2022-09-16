@@ -1,5 +1,27 @@
+@use './partials/colors' as *;
+@use './partials/variables' as *;
+
 *, *::before, *::after{
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1 {
+    font-size: 1.625rem;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 1rem;
+    color: $primary-grey;
+    font-weight: 300;
+  }
+  
+  h3 {
+    color: $primary-red;
+    font-weight: 600;
+  }
+  
+  p, span, a {
+    font-weight: 300;
+  }
