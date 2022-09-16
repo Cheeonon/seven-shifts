@@ -1,0 +1,24 @@
+[
+    {
+        "name": "John Doe",
+        "email": "jdoe@gmail.com",
+        "position": "Server",
+        "days": ["Sun", "Mon", "Wed", "Fri"]
+    },
+    {
+        "name": "Jane Foster",
+        "days": ["Tue", "Thurs", "Sat"]
+    },
+    {
+        "name": "Chlo Smith",
+        "days": ["Sun", "Tue", "Fri", "Sat"]
+    },
+    {
+        "name": "Jeremy Renner",
+        "days": ["Sun", "Mon", "Wed", "Fri"]
+    },
+    {
+        "name": "Nolan Knill",
+        "days": ["Tue", "Thurs", "Sat"]
+    }
+]
