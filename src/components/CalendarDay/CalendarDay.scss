@@ -1,4 +1,17 @@
 .day{
-    font-weight: bold;
-    color: rgb(105, 95, 95);
+
+    &-title{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__day{
+        font-weight: bold;
+        color: rgb(105, 95, 95);
+    }
+
+    &__date{
+        font-size: 0.8rem;
+        color: rgb(139, 139, 139);
+    }
 }

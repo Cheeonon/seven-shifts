@@ -49,10 +49,12 @@ const CalendarDayBlock = ({employeeList, employee, day, activeEmployee }) => {
                 }
                 onMouseOver={handleAddButton}
                 onMouseLeave={handleNoAddButton}
+
             >
                 {foundDay && (
                   <TicketShift />
                 )}
+
                 {isAddButton && (
                     <div
                         className="day-block__add"

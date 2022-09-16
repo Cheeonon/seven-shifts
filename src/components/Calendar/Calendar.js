@@ -7,7 +7,38 @@ import ModalTest from "../ModalTest/ModalTest";
 import axios from 'axios';
 
 const Calendar = () => {
-    const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const days = [
+    {
+        day: "Sun",
+        date: "Sep 18"
+    },
+    {
+        day: "Mon",
+        date: "Sep 19"
+    },
+    {
+        day: "Tue",
+        date: "Sep 20"
+    },
+    {
+        day: "Wed",
+        date: "Sep 21"
+    },
+    {
+        day: "Thu",
+        date: "Sep 22"
+    },
+    {
+        day: "Fri",
+        date: "Sep 16"
+    },
+    {
+        day: "Sat",
+        date: "Sep 17"
+    }
+]
+
+
     const [isAddEmployee, setIsAddEmployee] = useState(false);
     const [activeEmployee, setActiveEmployee] = useState(null);
     const [employeeList, setEmployeeList] = useState([]);
