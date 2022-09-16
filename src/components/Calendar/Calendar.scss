@@ -1,5 +1,8 @@
 .calendar{
     display: flex;
+    transform: scale(1.1);
+    transform-origin: top left;
+    box-shadow: 5px 5px 15px 5px #0000001e;
 
     &__employees{
 
@@ -41,4 +44,10 @@
     &--active{
         background-color: rgba(222, 223, 223, 0.369);
     }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

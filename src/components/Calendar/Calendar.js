@@ -78,32 +78,34 @@ const Calendar = () => {
     return (
         <>
             {/* {isAddEmployee && <ModalTest handleCancel={handleCancel} />} */}
-            <div className="calendar">
-                <div className="calendar__employees">
-                    <div className="calendar__employees--title block block--title">
-                        Employee
-                        
+            <div className="container">
+                <div className="calendar">
+                    <div className="calendar__employees">
+                        <div className="calendar__employees--title block block--title">
+                            Employee
+                            
+                        </div>
+                        {employeeList.map((employee) => {
+                            return (
+                                <CalendarEmployee
+                                    handleHovering={handleHovering}
+                                    handleNotHovering={handleNotHovering}
+                                    employee={employee}
+                                />
+                            );
+                        })}
                     </div>
-                    {employeeList.map((employee) => {
-                        return (
-                            <CalendarEmployee
-                                handleHovering={handleHovering}
-                                handleNotHovering={handleNotHovering}
-                                employee={employee}
-                            />
-                        );
-                    })}
-                </div>
-                <div className="calendar__days">
-                    {days.map((day, index) => {
-                        return (
-                            <CalendarDay
-                                day={day}
-                                employeeList={employeeList}
-                                activeEmployee={activeEmployee}
-                            />
-                        );
-                    })}
+                    <div className="calendar__days">
+                        {days.map((day, index) => {
+                            return (
+                                <CalendarDay
+                                    day={day}
+                                    employeeList={employeeList}
+                                    activeEmployee={activeEmployee}
+                                />
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </>
