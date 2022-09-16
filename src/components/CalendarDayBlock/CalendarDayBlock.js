@@ -1,10 +1,13 @@
 import { useState } from "react";
 import ModalTest from "../ModalTest/ModalTest";
+import TicketShift from "../TicketShift/TicketShift";
 import "./CalendarDayBlock.scss";
 
-const CalendarDayBlock = ({ employee, day, activeEmployee }) => {
+const CalendarDayBlock = ({employeeList, employee, day, activeEmployee }) => {
 
-    const workDayList = employee.days;
+    const workDayList = [employee.days.day1[0].day, employee.days.day2[0]]
+    console.log(workDayList)
+
     const foundDay = workDayList.find((workDay) => {
         return workDay === day;
     });
@@ -26,11 +29,18 @@ const CalendarDayBlock = ({ employee, day, activeEmployee }) => {
     const handleCancel = () => {
         setUpdateSchedule(false);
     };
+
+    // -------------- event creates meeting in schedule------------------
+    const handleAddMeeting = () => {
+        
+    }
+
+    // -------------------------------------------
     
 
     return (
         <>
-            {updateSchedule && <ModalTest handleCancel={handleCancel} />}
+            {updateSchedule && <ModalTest employeeList={employeeList} employeeName={employee.name} handleCancel={handleCancel} />}
             <div
                 className={
                     activeEmployee === employee.name
@@ -39,12 +49,12 @@ const CalendarDayBlock = ({ employee, day, activeEmployee }) => {
                 }
                 onMouseOver={handleAddButton}
                 onMouseLeave={handleNoAddButton}
+
             >
                 {foundDay && (
-                    <div className="day-block__ticket">
-                        <div className="day-block__type"></div>
-                    </div>
+                  <TicketShift />
                 )}
+
                 {isAddButton && (
                     <div
                         className="day-block__add"

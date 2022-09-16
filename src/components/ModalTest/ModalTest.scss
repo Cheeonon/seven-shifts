@@ -10,6 +10,15 @@
     justify-content: center;
     align-items: center;
 
+  &__select {
+    width: 20rem;
+    margin-left: 1rem;
+  }
+  &__employee {
+    color: black;
+    padding-bottom: 1rem;
+  }
+
 
     &__content{
         display: flex;
@@ -20,6 +29,14 @@
   }
 
   &__cancel{
+    width: 100%;
     font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__X:hover {
+    transform: rotate(-0.25turn);
+    transition: ease-in 0.5s;
   }
 }
