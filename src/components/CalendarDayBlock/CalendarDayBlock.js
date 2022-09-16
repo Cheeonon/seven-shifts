@@ -29,13 +29,6 @@ const CalendarDayBlock = ({employeeList, employee, day, activeEmployee }) => {
     const handleCancel = () => {
         setUpdateSchedule(false);
     };
-
-    // -------------- event creates meeting in schedule------------------
-    const handleAddMeeting = () => {
-        
-    }
-
-    // -------------------------------------------
     
 
     return (
@@ -55,7 +48,7 @@ const CalendarDayBlock = ({employeeList, employee, day, activeEmployee }) => {
                   <TicketShift />
                 )}
 
-                {isAddButton && (
+                    {isAddButton && (
                     <div
                         className="day-block__add"
                         onClick={handleUpdateSchedule}
