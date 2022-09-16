@@ -1,0 +1,44 @@
+.calendar{
+    display: flex;
+
+    &__employees{
+
+        &--title{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        &__btn{
+            border: none;
+            border-radius: 5px;
+            text-align: left;
+            padding: 0.5rem;
+            transition: all 0.3s ease;
+
+            &:hover{
+                transform: scale(0.96);
+            }
+        }
+    }
+
+    &__days{
+        display: flex;
+        width: 90%;
+    }
+}
+
+.block{
+    width: 8rem;
+    height: 4rem;
+    border: 1px solid rgba(211, 211, 211, 0.478);
+    padding: 0.5rem;
+
+    &--title{
+        height: 7rem;
+    }
+
+    &--active{
+        background-color: rgba(222, 223, 223, 0.369);
+    }
+}

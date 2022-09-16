@@ -1,0 +1,25 @@
+.modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.344);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        background: white;
+        align-items: center;
+        padding: 2rem;
+  }
+
+  &__cancel{
+    font-size: 1.2rem;
+  }
+}
