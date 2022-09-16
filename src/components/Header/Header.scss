@@ -1,0 +1,80 @@
+@use '../../styles/partials/colors' as *;
+
+.header{
+    background-color: $header-color;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    color: $custom-gray;
+    font-size: 0.9rem;
+
+    &__logo{
+        width: 20%;
+        display: flex;
+        align-items: center;
+
+        &-img{
+            width: 30px;
+            height: 30px;
+            background: $primary-red;
+            margin-right: 1rem;
+            border-radius: 50%;
+        }
+
+        &-text{
+
+        }
+    }
+
+}
+
+.nav{
+    width: 60%;
+    justify-self: center;
+
+
+    &__list{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item{
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        margin: 0 0.5rem;
+        height: 100%;
+        padding: 1.3rem 0.5rem;
+
+        &-icon{
+            color: white;
+            margin-right: 0.5rem
+        }
+
+        &-text{
+        }
+
+        &:hover{
+            background-color:  rgba(255, 255, 255, 0.1);
+            border-bottom: 2px solid white;
+        }
+    }
+}
+
+.profile{
+    width: 20%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+
+    &__icon{
+        margin-right: 1rem
+    }
+
+    &__avatar{
+        margin-right: 1rem
+    }
+}
