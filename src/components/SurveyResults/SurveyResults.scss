@@ -6,11 +6,8 @@
     right: 0;
     width: 35%;
     height: 100vh;
-    padding: 2.5rem;
+    padding: 7.5rem 2.5rem;
     background-color: #F0F3FC;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
     &__title {
         color: $primary-blue;

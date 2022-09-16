@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+main {
+    padding-top: 4rem;
+}
+
 h1 {
     font-size: 1.625rem;
     font-weight: 700;
@@ -28,4 +32,19 @@ h1 {
   
   p, span, a {
     font-weight: 300;
+  }
+
+  ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    margin: 0;
+  }
+
+  a{
+    color: inherit;
+    text-decoration: none;
   }

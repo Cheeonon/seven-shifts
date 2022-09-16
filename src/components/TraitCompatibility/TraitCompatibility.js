@@ -19,10 +19,10 @@ function TraitCompatibility() {
     }, []);
 
     return (
-        <main className='trait-compatibility'>
+        <div className='trait-compatibility'>
             <ValueEditor traits={traits} setTraits={setTraits} />
             <SurveyResults traits={traits} />
-        </main>
+        </div>
     )
 }
 export default TraitCompatibility;
